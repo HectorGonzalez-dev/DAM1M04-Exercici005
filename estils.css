@@ -92,3 +92,39 @@ nav a.activo {
     background: #a24d31;
     transform: scale(1.05);
 }
+
+/* Estilos de las cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    padding: 0 15px 15px;
+}
+
+.card h2 {
+    padding: 0 15px 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
