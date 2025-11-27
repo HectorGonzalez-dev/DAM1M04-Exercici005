@@ -47,3 +47,38 @@ nav a:hover {
     width: auto;
     margin-right: 20px;
 }
+
+/* Estilos hero */
+.hero {
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #5a3825;
+}
+
+h2 {
+    color: #5a3825;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #6b2f23;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+
+.btn:hover {
+    background: #7a3527;
+    transform: scale(1.05);
+}
