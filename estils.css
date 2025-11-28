@@ -16,6 +16,7 @@ nav {
     display: flex;
     align-items: center;
     font-weight: bold;
+    z-index: 10;
 }
 
 nav a {
@@ -290,5 +291,72 @@ nav a.activo {
         transform: translateX(400px) rotate(180deg);
         filter: invert(20%) sepia(100%) saturate(1000%) hue-rotate(360deg);
         opacity: 0.5;
+    }
+}
+
+/* Estilos fantasmas churros */
+.ghosts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ghost1 {
+    width: 80%;
+    height: 500px;
+    margin-top: 300px;
+    display: flex;
+}
+
+.ghost2 {
+    width: 80%;
+    height: 500px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: end;
+}
+
+.ghost3 {
+    width: 80%;
+    height: 500px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.ghost-img {
+    height: 100%;
+    width: auto;
+}
+
+/* Fallback para navegadores que no soporten scroll-linked animations */
+@supports not (animation-timeline: view()) {
+    .reveal {
+        animation: fadeUp 1s forwards;
+    }
+
+    .reveal:nth-child(1) { animation-delay: 0s; }
+    .reveal:nth-child(2) { animation-delay: 0.3s; }
+    .reveal:nth-child(3) { animation-delay: 0.6s; }
+}
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll-linked animation */
+@supports (animation-timeline: view()) {
+    .reveal {
+        animation: scrollFade 1s linear both;
+        animation-timeline: view();
+        animation-range: entry -100% exit -50%;
+    }
+
+    @keyframes scrollFade {
+        0% { opacity: 0; transform: translateY(50px); }
+        100% { opacity: 1; transform: translateY(0); }
     }
 }
