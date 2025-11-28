@@ -360,3 +360,42 @@ nav a.activo {
         100% { opacity: 1; transform: translateY(0); }
     }
 }
+
+/* Estilos guia-estils */
+.estilos-textos {
+    padding-left: 30px;
+}
+
+.estilos-textos h1 {
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 700;
+}
+
+.estilos-textos h2, .estilos-textos .p1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.estilos-textos h3 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 10;
+}
+
+.estilos-textos .p3 {
+    line-height: 50px;
+    background-color: darkgray;
+}
+
+.estilos-textos .p4 {
+    letter-spacing: 5px;
+}
+
+.estilos-textos .p5 {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.estilos-textos .span5 {
+    font-size: 24px;
+    vertical-align: -4px;
+}
