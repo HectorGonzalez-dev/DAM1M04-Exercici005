@@ -364,6 +364,7 @@ nav a.activo {
 /* Estilos guia-estils */
 .estilos-textos {
     padding-left: 30px;
+    margin-bottom: 50px;
 }
 
 .estilos-textos h1 {
@@ -398,4 +399,62 @@ nav a.activo {
 .estilos-textos .span5 {
     font-size: 24px;
     vertical-align: -4px;
+}
+
+.estilos-textos .p7 {
+    color: #fff;
+    background-color: #2b1c15;
+}
+
+.estilos-textos .p8 {
+    font-size: 0.875rem;
+}
+
+.estilos-textos .span9 {
+  font-variation-settings: "FILL" 0, "wght" 300, "opsz" 20;
+}
+
+.estilos-textos .span10 {
+  font-variation-settings: "FILL" 0, "wght" 400, "opsz" 24;
+}
+
+.estilos-textos .span11 {
+  font-variation-settings: "FILL" 1, "wght" 700, "opsz" 40;
+}
+
+.examplea {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2b1c15;
+    gap: 8px;
+    margin-top: 10px;
+    max-width: 70px;
+    transition: all 0.25s ease;
+}
+
+.examplea:hover {
+    color: #c05c3a;
+    letter-spacing: 1px;
+}
+
+.examplebutton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: #c05c3a;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 70px;
+}
+
+.examplebutton:hover {
+    background: #a24d31;
+    transform: scale(1.05);
+    font-variation-settings: "FILL" 1;
 }
